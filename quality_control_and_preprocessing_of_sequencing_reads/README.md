@@ -7,8 +7,10 @@ This protocal was used for sequencing data quality control and preprocessing. We
 The specific purposes of the dir system were showed as follows:
 
   __1. Input__: We store the partial raw input for user to test the sample data quickly without additional data downloading.  The data in input directory are incomplete, user can download the complete data in Data access.
-  
   __2. Output__: The final output results of each tools in workflow.
+  __3. Workflow__: Step by step pipeline. 
+  __4. README.md__: In readme file, user can learn basic information for data access and tool usages.
+  __5. LICENSE__: The copyright file.
   
   
 
