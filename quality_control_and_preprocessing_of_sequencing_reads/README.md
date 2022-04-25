@@ -2,6 +2,11 @@
 
 # Quality control and Preprocessing of Sequencing Reads
 
+This protocal was used for sequencing data quality control and preprocessing. We showed how to use common tools in quality control and preprocessing of sequencing reads.
+
+The specific purposes of the dir system were showed as follows:
+  __1. Input__: We store the partial raw input for user to test the sample data quickly without additional data downloading.  
+
 ## Workflow
 
 ![](Workflow/workflow.svg)
