@@ -33,7 +33,7 @@ The complete smaple data can be accessed as follows:
 [SRR2061398_1.fastq.gz](http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/008/SRR2061398/SRR2061398_1.fastq.gz), 
 [SRR2061398_2.fastq.gz](http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/008/SRR2061398/SRR2061398_2.fastq.gz). 
 
-Those data are about Arabidopsis thaliana response to cytokinin in roots and shoots, which **aims to identify genes which are differentially expressed in root and/or shoot material in response to exogenous cytokinin**
+Those data are about Arabidopsis thaliana response to cytokinin in roots and shoots, which aims to identify genes which are differentially expressed in root and/or shoot material in response to exogenous cytokinin.pbaaims to identify genes which are differentially expressed in root and/or shoot material in response to exogenous cytokinin
 
 ## Prequisite softwares
 
