@@ -2,6 +2,9 @@
 
 # Quality control and Preprocessing of Sequencing Reads
 
+## Workflow
+[!](Workflow/workflow.svg)
+
 Here, we provide the sample data for quality control and preprocessing of sequencing reads, and the softwares used in pipeline were provided with their download links.
 The complete smaple data can be accessed with the URL as follows:
 http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2061397/SRR2061397_1.fastq.gz
