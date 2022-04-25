@@ -10,11 +10,11 @@ http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/008/SRR2061398/SRR2061398_1.fastq.gz
 http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/008/SRR2061398/SRR2061398_2.fastq.gz
 
 The prequisite softwares can be obtained by visiting their released website. For example,
-1. FastQC can be accessed by https://codeload.github.com/s-andrews/FastQC/zip/refs/heads/master, or  it can be installed in your computer by conda (conda install fastqc)
-2. iTools can be accessed by https://github.com/BGI-shenzhen/Reseqtools/blob/master/iTools_Code20180520.tar.gz
-3. Cutadapt can be accessed by https://codeload.github.com/jamescasbon/cutadapt/zip/refs/heads/master
-4. Fastp can be accessed by https://codeload.github.com/OpenGene/fastp/zip/refs/heads/master, and the alternative way is conda (conda install -c bioconda fastp)
-5. FASTX can be accessed by https://codeload.github.com/agordon/fastx_toolkit/zip/refs/heads/master
+1. _FastQC_ can be accessed by https://codeload.github.com/s-andrews/FastQC/zip/refs/heads/master, or  it can be installed in your computer by conda (conda install fastqc)
+2. _iTools_ can be accessed by https://github.com/BGI-shenzhen/Reseqtools/blob/master/iTools_Code20180520.tar.gz
+3. _Cutadapt_ can be accessed by https://codeload.github.com/jamescasbon/cutadapt/zip/refs/heads/master
+4. _Fastp_ can be accessed by https://codeload.github.com/OpenGene/fastp/zip/refs/heads/master, and the alternative way is conda (conda install -c bioconda fastp)
+5. _FASTX_ can be accessed by https://codeload.github.com/agordon/fastx_toolkit/zip/refs/heads/master
 User can install and use those softwares with linux-like system.
 
 By integrating those softwares, we could finish the quality control and preprocessing for high-throughput data in multiple way. In addition, we provide the simple usage of those software for the users.
