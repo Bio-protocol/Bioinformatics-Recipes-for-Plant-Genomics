@@ -1,6 +1,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-### Quality control and Preprocessing of Sequencing Reads
+# Quality control and Preprocessing of Sequencing Reads
+
 Here, we provide the sample data for quality control and preprocessing of sequencing reads, and the softwares used in pipeline were provided with their download links.
 The complete smaple data can be accessed with the URL as follows:
 http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2061397/SRR2061397_1.fastq.gz
@@ -47,3 +48,6 @@ Different tools in FASTX-Toolkit perform a list of preprocessing tasks, such as,
 fastx_clipper -a AGATCGGAAGAGC -l 25 -d 0 -Q 33 -i SRR2061397_1.fastq -o SRR2061397_1trimmed.fastq
 
 Parameter: -a for adapter string, -l for discard sequence shorter than N nucleotides. -d N keep the adapter and N bases after it. -i input file, -o output file.
+
+## License
+It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt), [MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md), or [CC BY 4.0](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-4.0.txt)).
