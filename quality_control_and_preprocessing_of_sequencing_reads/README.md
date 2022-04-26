@@ -77,6 +77,11 @@ sh Workflow/4_run_fastp.sh fastp
 sh Workflow/5_run_fastx_clipper.sh
 ```
 
+## Expected result
+
+[Fastqc Result_SRR2061397_1](Output/Fastqc/SRR2061397_1_fastqc.html),
+[Fastqc Result_SRR2061397_2](Output/Fastqc/SRR2061397_2_fastqc.html).
+
 
 ## License
 It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt), [MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md), or [CC BY 4.0](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-4.0.txt)).
