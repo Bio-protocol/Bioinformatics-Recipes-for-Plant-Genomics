@@ -108,10 +108,10 @@ sh Workflow/5_run_fastx_clipper.sh
 
 ## Expected result
 
-Fastqc Result for SRR2061397_1 showed the distribution of quality score for each base in read1:![](graphs/fastqc1.png)
-Fastqc Result for SRR2061397_2 showed the distribution of quality score for each base in read2:![](graphs/fastqc2.png)
-Fastp Result for SRR2061397_1 showed the distribution of base content ratios across read1:![](graphs/fastp_after1.png)
-Fastp Result for SRR2061397_2 showed the distribution of base content ratios across read2:![](graphs/fastp_after2.png)
+Fastqc Result for SRR2061397_1 showed the distribution of quality score for each base:![](graphs/fastqc1.png)
+Fastqc Result for SRR2061397_2 showed the distribution of quality score for each base:![](graphs/fastqc2.png)
+Fastp Result for SRR2061397_1 showed the distribution of base content ratios across read:![](graphs/fastp_after1.png)
+Fastp Result for SRR2061397_2 showed the distribution of base content ratios across read:![](graphs/fastp_after2.png)
 iTools Result for SRR2061397_1 showed the basic information of reads, sucha read number, read length, GC content, and base content:
 ```
 ##SRR2061397_1.fastq##
