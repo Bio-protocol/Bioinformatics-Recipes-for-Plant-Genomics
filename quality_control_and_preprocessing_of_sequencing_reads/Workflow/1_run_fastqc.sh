@@ -19,4 +19,4 @@ function canonicalPath
 # usage example
 mycanonicalpath=$(canonicalPath "$../")
 
-fastqc -t 8 -o outdir SRR2061397_1.fastq  SRR2061397_2.fastq  SRR2061398_1.fastq   SRR2061397_2.fastq
+fastqc -t 8 -o Output/Fastqc Input/SRR2061397_1.fastq  Input/SRR2061397_2.fastq
