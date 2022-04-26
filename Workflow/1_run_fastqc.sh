@@ -20,3 +20,5 @@ function canonicalPath
 mycanonicalpath=$(canonicalPath "$../")
 
 fastqc -t 8 -o Output/Fastqc Input/SRR2061397_1.fastq  Input/SRR2061397_2.fastq
+
+#Parameter description: -t for CPU number, -o for output directory
