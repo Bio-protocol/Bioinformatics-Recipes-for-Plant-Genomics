@@ -38,11 +38,12 @@ Those data are about Arabidopsis thaliana response to cytokinin in roots and sho
 ## Prequisite softwares
 
 The prequisite softwares can be obtained by visiting their released website. For example,
-1. __FastQC__ can be accessed by https://codeload.github.com/s-andrews/FastQC/zip/refs/heads/master[](https://codeload.github.com/s-andrews/FastQC/zip/refs/heads/master), or  it can be installed in your computer by conda (conda install fastqc)
-2. __iTools__ can be accessed by https://github.com/BGI-shenzhen/Reseqtools/blob/master/iTools_Code20180520.tar.gz
-3. __Cutadapt__ can be accessed by https://codeload.github.com/jamescasbon/cutadapt/zip/refs/heads/master
-4. __Fastp__ can be accessed by https://codeload.github.com/OpenGene/fastp/zip/refs/heads/master, and the alternative way is conda (conda install -c bioconda fastp)
-5. __FASTX__ can be accessed by https://codeload.github.com/agordon/fastx_toolkit/zip/refs/heads/master
+1. [__FastQC__](https://codeload.github.com/s-andrews/FastQC/zip/refs/heads/master)
+2. [__iTools__](https://github.com/BGI-shenzhen/Reseqtools/blob/master/iTools_Code20180520.tar.gz)
+3. [__Cutadapt__](https://codeload.github.com/jamescasbon/cutadapt/zip/refs/heads/master)
+4. [__Fastp__](https://codeload.github.com/OpenGene/fastp/zip/refs/heads/master)
+5. [__FASTX__](https://codeload.github.com/agordon/fastx_toolkit/zip/refs/heads/master)
+6. 
 User can install and use those softwares with linux-like system.
 
 By integrating those softwares, we could finish the quality control and preprocessing for high-throughput data in multiple way. In addition, we provide the simple usage of those software for the users.
@@ -53,7 +54,7 @@ By integrating those softwares, we could finish the quality control and preproce
 FastQC can be either as an interactive  graphical application. Alternatively, you can run the program in non-interactive way. If you don't specific any files to process, the program will try to open the interactive application. Click the file button and choose fastq files located in your computer. Click the confirm button, and wait your reports about several minutes. Run fastqc from the command line like this:
 
 ```
-fastqc -t 8 -o outdir SRR2061397_1.fastq  SRR2061397_2.fastq  SRR2061398_1.fastq   SRR2061397_2.fastq
+sh Workflow/1_run_fastqc.sh
 ```
 
 Parameter description: -t for CPU number, -o for output directory
