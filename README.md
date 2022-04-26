@@ -14,6 +14,9 @@ The specific purposes of the dir system were showed as follows:
   
   __4. README.md__: In readme file, user can learn basic information for data access and tool usages.
   
+ 
+  __5. graphs__: Plots of results.
+  
   __5. LICENSE__: The copyright file.
 
 
