@@ -79,11 +79,11 @@ sh Workflow/5_run_fastx_clipper.sh
 
 ## Expected result
 
-*Fastqc Result for SRR2061397_1:![](graphs/fastqc1.png)
-*Fastqc Result for SRR2061397_2:![](graphs/fastqc2.png)
-*Fastp Result for SRR2061397_1:![](graphs/fastp_after1.png)
-*Fastp Result for SRR2061397_2:![](graphs/fastp_after2.png)
-*iTools Result for SRR2061397_1:
+Fastqc Result for SRR2061397_1:![](graphs/fastqc1.png)
+Fastqc Result for SRR2061397_2:![](graphs/fastqc2.png)
+Fastp Result for SRR2061397_1:![](graphs/fastp_after1.png)
+Fastp Result for SRR2061397_2:![](graphs/fastp_after2.png)
+iTools Result for SRR2061397_1:
 ```
 ##SRR2061397_1.fastq##
 #ReadNum: 25000	BaseNum: 2500000	ReadLeng: 100
@@ -105,8 +105,47 @@ sh Workflow/5_run_fastx_clipper.sh
 #ReadQ:20--30 : 795(3.18%)	>Q30: 95.91%
 #ReadQ:30--40 : 23977(95.91%)	>Q40: 0.00%
 #ReadQ:40--50 : 1(0.00%)	>Q50: 0.00%
+
+##SRR2061397_2.fastq##
+#ReadNum: 25000	BaseNum: 2500000	ReadLeng: 100
+#GC%: 44.71%	AT%: 55.18%
+#A BaseNum: 689144	27.57%
+#C BaseNum: 569646	22.79%
+#T BaseNum: 690456	27.62%
+#G BaseNum: 548221	21.93%
+#N BaseNum: 2533	0.10%
+
+#BaseQ:0--10 : 75065(3.00%)	>Q10: 97.00%
+#BaseQ:10--20 : 23194(0.93%)	>Q20: 96.07%
+#BaseQ:20--30 : 105595(4.22%)	>Q30: 91.85%
+#BaseQ:30--40 : 1456988(58.28%)	>Q40: 33.57%
+#BaseQ:40--50 : 839158(33.57%)	>Q50: 0.00%
+
+#ReadQ:0--10 : 365(1.46%)	>Q10: 98.54%
+#ReadQ:10--20 : 465(1.86%)	>Q20: 96.68%
+#ReadQ:20--30 : 1203(4.81%)	>Q30: 91.87%
+#ReadQ:30--40 : 22967(91.87%)	>Q40: 0.00%
+
 ```
+Cutadapt Result:
+```
+===SRR2061397 Summary ===
 
+Total read pairs processed:             25,000
+  Read 1 with adapter:                      31 (0.1%)
+  Read 2 with adapter:                      30 (0.1%)
+Pairs that were too short:               1,038 (4.2%)
+Pairs written (passing filters):        23,962 (95.8%)
 
+Total basepairs processed:     5,000,000 bp
+  Read 1:     2,500,000 bp
+  Read 2:     2,500,000 bp
+Quality-trimmed:                 222,267 bp (4.4%)
+  Read 1:        67,386 bp
+  Read 2:       154,881 bp
+Total written (filtered):      4,700,683 bp (94.0%)
+  Read 1:     2,365,705 bp
+  Read 2:     2,334,978 bp
+```
 ## License
 It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt), [MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md), or [CC BY 4.0](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-4.0.txt)).
