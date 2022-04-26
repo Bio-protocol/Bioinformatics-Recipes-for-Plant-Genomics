@@ -21,3 +21,5 @@ mycanonicalpath=$(canonicalPath "$../")
 
 
 fastp -i Input/SRR2061397_1.fastq -I Input/SRR2061397_2.fastq -o Output/fastp/SRR2061397_1clean.fastq -O Output/fastp/SRR2061397_2clean.fastq
+
+# Parameter description: -i read1 input file, -I read2_inputfile, -o read1 output file, -O read2_output file.
