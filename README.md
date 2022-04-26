@@ -76,11 +76,15 @@ By integrating those softwares, we could finish the quality control and preproce
 
 #### Step 1: running the FastQC to conduct quality checking
 
+- Note that you have to normalize the path in the shell script.
+
 ```
 sh Workflow/1_run_fastqc.sh
 ```
 
 #### Step2: running the iTools to conduct quality checking alternatively
+
+- Note that you have to normalize the path in the shell script.
 
 ```
 sh Workflow/2_run_iTools.sh
