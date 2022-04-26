@@ -15,8 +15,7 @@ The specific purposes of the dir system were showed as follows:
   __4. README.md__: In readme file, user can learn basic information for data access and tool usages.
   
   __5. LICENSE__: The copyright file.
-  
-  
+
 
 ## Workflow
 
@@ -43,7 +42,7 @@ The prequisite softwares can be obtained by visiting their released website. For
 3. [__Cutadapt__](https://codeload.github.com/jamescasbon/cutadapt/zip/refs/heads/master)
 4. [__Fastp__](https://codeload.github.com/OpenGene/fastp/zip/refs/heads/master)
 5. [__FASTX__](https://codeload.github.com/agordon/fastx_toolkit/zip/refs/heads/master)
-6. 
+
 User can install and use those softwares with linux-like system.
 
 By integrating those softwares, we could finish the quality control and preprocessing for high-throughput data in multiple way. In addition, we provide the simple usage of those software for the users.
@@ -51,44 +50,33 @@ By integrating those softwares, we could finish the quality control and preproce
 ## Major steps
 
 #### Step 1: running the FastQC to conduct quality checking
-FastQC can be either as an interactive  graphical application. Alternatively, you can run the program in non-interactive way. If you don't specific any files to process, the program will try to open the interactive application. Click the file button and choose fastq files located in your computer. Click the confirm button, and wait your reports about several minutes. Run fastqc from the command line like this:
 
 ```
 sh Workflow/1_run_fastqc.sh
 ```
 
-Parameter description: -t for CPU number, -o for output directory
-
-iTools is a toolkit for analyzing next-generation sequencing data. One module of iTools is Fqtools, which processes the fastq sequence file. Here, we show one of its function as follows: summarizes the quality and amount of data as well as the GC content. Run iTools from the command line like this:
+#### Step2: running the iTools to conduct quality checking alternatively
 
 ```
-iTools Fqtools stat -InFq SRR2061397_1.fastq -InFq SRR2061397_1.fastq -InFq SRR2061398_1.fastq -InFq SRR2061397_2.fastq -OutStat read.info -CPU 8
+sh Workflow/2_run_iTools.sh
 ```
 
-Parameter description: -InFq for input file, -OutStat for the output file, -CPU: CPU number 
-
-Cutadapt searches for the adapter in all reads and removes it when it finds is. The command-line for cutadapt is:
+#### Step3: running the Cutadapt to conduct read preprocessing (removing adapter)
 
 ```
-cutadapt -a AGATCGGAAGAGC -A AGATCGGAAGAGC -q 30 -m 20 –trim-n -O 10 -o SRR2061397_1trimmed.fastq -p SRR2061397_2trimmed.fasq  SRR2061397_1.fastq SRR2061397_2.fastq
+sh Workflow/3_run_cutadapt.sh
 ```
-
-Parameter description: -a for sequence of an adapter ligated to the 3’ end, -A 3’ adapter to be removed from second read in a pair, -q trim low-quality bases from 5’ and 3’ ends of each read. -m 20 for discard trimmed reads that are shorter than 20. -O MINLENGTH if the overlap between the read and the adapter is shorter than MINLENGTH, the read is not modified, reduces the number of bases trimmed due to random adapter match. -o output file -p paired-output.
-
-fastp can perfom quality control, adapter trimming, quality filtering, per-read quality pruning with a single scan of fastq data. The command-line for fastp is:
+#### Step4: run fastp to perform quality control, adapter trimming, quality filtering and per-read quality pruning
 
 ```
-fastp -i SRR2061397_1.fastq -I SRR2061397_2.fastq -o SRR2061397_1clean.fastq -O SRR2061397_2clean.fastq
+sh Workflow/4_run_fastp.sh fastp
 ```
-
-Parameter description: -i read1 input file, -I read2_inputfile, -o read1 output file, -O read2_output file.
-
-Different tools in FASTX-Toolkit perform a list of preprocessing tasks, such as, convert fastq files to fasta files, removing sequencing adapters, filters sequences based on quality, shortening reads, trims sequences based on quality.Here, one tool as example is showed as follows:
+#### Step 5: run fastx_clipper to remove adapter
 
 ```
-fastx_clipper -a AGATCGGAAGAGC -l 25 -d 0 -Q 33 -i SRR2061397_1.fastq -o SRR2061397_1trimmed.fastq
+sh Workflow/5_run_fastx_clipper.sh
 ```
-Parameter: -a for adapter string, -l for discard sequence shorter than N nucleotides. -d N keep the adapter and N bases after it. -i input file, -o output file.
+
 
 ## License
 It is a free and open source software, licensed under []() (choose a license from the suggested list:  [GPLv3](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt), [MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md), or [CC BY 4.0](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-4.0.txt)).
