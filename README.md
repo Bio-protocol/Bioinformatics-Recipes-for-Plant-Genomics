@@ -15,9 +15,9 @@ The specific purposes of the dir system were showed as follows:
   __4. README.md__: In readme file, user can learn basic information for data access and tool usages.
   
  
-  __5. graphs__: Plots of results.
+  __5. graphs__: Figures in analysis.
   
-  __5. LICENSE__: The copyright file.
+  __6. LICENSE__: The copyright file.
 
 
 ## Workflow
@@ -82,11 +82,11 @@ sh Workflow/5_run_fastx_clipper.sh
 
 ## Expected result
 
-Fastqc Result for SRR2061397_1:![](graphs/fastqc1.png)
-Fastqc Result for SRR2061397_2:![](graphs/fastqc2.png)
-Fastp Result for SRR2061397_1:![](graphs/fastp_after1.png)
-Fastp Result for SRR2061397_2:![](graphs/fastp_after2.png)
-iTools Result for SRR2061397_1:
+Fastqc Result for SRR2061397_1 showed the distribution of quality score for each base in read1:![](graphs/fastqc1.png)
+Fastqc Result for SRR2061397_2 showed the distribution of quality score for each base in read2:![](graphs/fastqc2.png)
+Fastp Result for SRR2061397_1 showed the distribution of base content ratios across read1:![](graphs/fastp_after1.png)
+Fastp Result for SRR2061397_2 showed the distribution of base content ratios across read2:![](graphs/fastp_after2.png)
+iTools Result for SRR2061397_1 showed the basic information of reads, sucha read number, read length, GC content, and base content:
 ```
 ##SRR2061397_1.fastq##
 #ReadNum: 25000	BaseNum: 2500000	ReadLeng: 100
@@ -130,7 +130,7 @@ iTools Result for SRR2061397_1:
 #ReadQ:30--40 : 22967(91.87%)	>Q40: 0.00%
 
 ```
-Cutadapt Result:
+Cutadapt Result showed the summary of output:
 ```
 ===SRR2061397 Summary ===
 
