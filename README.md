@@ -79,11 +79,33 @@ sh Workflow/5_run_fastx_clipper.sh
 
 ## Expected result
 
-Fastqc Result for SRR2061397_1:![](graphs/fastqc1.png)
-Fastqc Result for SRR2061397_2:![](graphs/fastqc2.png)
-Fastp Result for SRR2061397_1:![](graphs/fastp_after1.png)
-Fastp Result for SRR2061397_2:![](graphs/fastp_after2.png)
-iTools Result for SRR2061397:![(Output/iTools/read.info)]
+*Fastqc Result for SRR2061397_1:![](graphs/fastqc1.png)
+*Fastqc Result for SRR2061397_2:![](graphs/fastqc2.png)
+*Fastp Result for SRR2061397_1:![](graphs/fastp_after1.png)
+*Fastp Result for SRR2061397_2:![](graphs/fastp_after2.png)
+*iTools Result for SRR2061397_1:
+```
+##SRR2061397_1.fastq##
+#ReadNum: 25000	BaseNum: 2500000	ReadLeng: 100
+#GC%: 44.71%	AT%: 55.29%
+#A BaseNum: 692018	27.68%
+#C BaseNum: 574981	23.00%
+#T BaseNum: 690226	27.61%
+#G BaseNum: 542734	21.71%
+#N BaseNum: 41	0.00%
+
+#BaseQ:0--10 : 23575(0.94%)	>Q10: 99.06%
+#BaseQ:10--20 : 13795(0.55%)	>Q20: 98.51%
+#BaseQ:20--30 : 75048(3.00%)	>Q30: 95.50%
+#BaseQ:30--40 : 1471835(58.87%)	>Q40: 36.63%
+#BaseQ:40--50 : 915747(36.63%)	>Q50: 0.00%
+
+#ReadQ:0--10 : 22(0.09%)	>Q10: 99.91%
+#ReadQ:10--20 : 205(0.82%)	>Q20: 99.09%
+#ReadQ:20--30 : 795(3.18%)	>Q30: 95.91%
+#ReadQ:30--40 : 23977(95.91%)	>Q40: 0.00%
+#ReadQ:40--50 : 1(0.00%)	>Q50: 0.00%
+```
 
 
 ## License
