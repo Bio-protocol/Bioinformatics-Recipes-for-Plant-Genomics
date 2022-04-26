@@ -83,7 +83,7 @@ Fastqc Result for SRR2061397_1:![](graphs/fastqc1.png)
 Fastqc Result for SRR2061397_2:![](graphs/fastqc2.png)
 Fastp Result for SRR2061397_1:![](graphs/fastp_after1.png)
 Fastp Result for SRR2061397_2:![](graphs/fastp_after2.png)
-iTools Result for SRR2061397:![](Output/iTools/read.info)
+iTools Result for SRR2061397:![(Output/iTools/read.info)]
 
 
 ## License
