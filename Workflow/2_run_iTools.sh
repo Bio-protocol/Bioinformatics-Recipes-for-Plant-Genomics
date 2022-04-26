@@ -21,3 +21,5 @@ mycanonicalpath=$(canonicalPath "$../")
 
 
 iTools Fqtools stat -InFq Input/SRR2061397_1.fastq -InFq Input/SRR2061397_1.fastq -InFq Input/SRR2061398_1.fastq -InFq Input/SRR2061397_2.fastq -OutStat Output/iTools/read.info -CPU 8
+
+#Parameter description: -InFq for input file, -OutStat for the output file, -CPU: CPU number 
