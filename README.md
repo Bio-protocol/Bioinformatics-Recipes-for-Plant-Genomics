@@ -79,8 +79,8 @@ sh Workflow/5_run_fastx_clipper.sh
 
 ## Expected result
 
-Fastqc Result_SRR2061397_1[](graphs/fastqc1.png),
-Fastqc Result_SRR2061397_2[](graphs/fastqc1.png).
+Fastqc Result_SRR2061397_1![](graphs/fastqc1.png),
+Fastqc Result_SRR2061397_2![](graphs/fastqc2.png).
 
 
 ## License
